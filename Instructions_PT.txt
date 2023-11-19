@@ -1,0 +1,19 @@
+Essas instruções fornecem um guia passo a passo para aplicar os temas e incluem os caminhos corretos tanto para o SQL Developer quanto para os temas do Code Editor
+Certifique-se de seguir essas etapas, e você deverá conseguir personalizar os temas no Oracle SQL Developer com sucesso.
+
+Com o SQL Developer fechado
+##Coloque o arquivo fusionblue.jar na pasta de temas. Exemplo de diretório: sqldeveloper-23.1.0.097.1607-x64\sqldeveloper\ide\themes
+
+#Se desejar personalizar ainda mais o tema da aplicação no Oracle SQL Developer, siga estas etapas
+Extraia o conteúdo do arquivo fusionblueBKP.jar para uma pasta
+Vá para o diretório \fusionblue\META-INF\theme dentro dos arquivos extraídos
+Edite o arquivo de tema conforme desejado
+Após fazer as alterações, compacte as pastas de volta em um arquivo .jar. Este arquivo deve ser nomeado fusionblue.jar
+Finalmente, coloque o fusionblue.jar recém-criado na pasta sqldeveloper\ide\themes
+
+##Tema do Code Editor (para cores de sintaxe PL/SQL)
+Pressione CTRL + R e digite %AppData% para abrir o diretório Roaming
+Vá para SQL Developer\system23.1.0.097.1607\o.ide.12.2.1.6.42.220506.654\dtcache.xml
+Edite dtcache.xml, procure a tag <schemeMap> e insira o tema desejado .xml abaixo do item "Default"
+Abra o Oracle SQL Developer e vá para Preferences > Code Editor > PL/SQL Syntax Colors > Scheme
+Selecione o tema desejado nas opções disponíveis
